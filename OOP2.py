@@ -20,6 +20,9 @@ class Person:
     def print_all(self):
         print(f"{self.name} {self.age} {self.midname} {self.profession} {self.gender}")
 
+
+class Enc(Person):
+    
     def cng_midname (self, newmidname):
         if self.midname:
             self.midname = newmidname
@@ -37,8 +40,8 @@ class Person:
         print(f"{self.name} cinsini deyiserek {newgender} oldu ve yeni adi {newname}")
         self.name = newname
 
-person1 = Person("Henry", "19", "Bazooka", "Muellim", "Man")
-person2 = Person("Oscar", "32", "", "Pilot", "Man")
+person1 = Enc("Henry", "19", "Bazooka", "Muellim", "Man")
+person2 = Enc("Oscar", "32", "", "Pilot", "Man")
 
 person1.print_all()
 person2.print_all()
